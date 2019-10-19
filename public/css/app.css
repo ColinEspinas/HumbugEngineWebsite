@@ -1,0 +1,97 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Roboto", sans-serif;
+}
+
+.main-nav {
+  background: #fafafa;
+  height: 100vh;
+  position: fixed;
+  box-shadow: 0 0 50px -15px rgba(0, 0, 0, 0.2);
+}
+
+.main-nav > .brand-header {
+  display: flex;
+  align-items: center;
+  padding: 30px 20px;
+  justify-content: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.main-nav > .brand-header > h1 {
+  margin: 0;
+}
+
+.main-nav > .brand-header > img {
+  height: 6.5em;
+  margin-right: 20px;
+}
+
+.main-menu-open {
+  background: transparent;
+  border: none;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  outline: none;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  transition: background 200ms ease;
+}
+
+.main-menu-open:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.main-menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.main-menu > li {
+  position: relative;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.main-menu > li.active::after {
+  content: "";
+  background: red;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  height: 8px;
+  width: 8px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+.main-menu > li > a {
+  display: flex;
+  padding: 20px 20px;
+  text-decoration: none;
+  color: black;
+  width: 100%;
+  transition: background 200ms ease;
+  align-items: center;
+}
+
+.main-menu > li > a > .feather {
+  margin-right: 20px;
+}
+
+.main-menu > li > a:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
