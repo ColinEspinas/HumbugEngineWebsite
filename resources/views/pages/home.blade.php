@@ -12,30 +12,11 @@
 @section('content')
 	<div class="lil-row">
 		<section class="lil-col center xs-11-12 sm-10-12 md-8-12 lg-8-12 xl-6-12 content-box">
-			<h2 class="section-title">Recent Posts:</h2>
-			<p class="section-desc">Check our latest posts on the engine development:</p>
-			<ul class="post-list">
-				<li class="post-display">
-					<a href="{{ route('blog.post.show', ['post'=>1]) }}">
-						<h3 class="title">Exemple Title</h3>
-						<span class="author">By Bastien Legoy</span>
-						<span class="date">3 days ago</span>
-					</a>
-				</li>
-				<li class="post-display">
-					<a href="">
-						<h3 class="title">Exemple Title</h3>
-						<span class="author">By Bastien Legoy</span>
-						<span class="date">3 days ago</span>
-					</a>
-				</li>
-				<li class="post-display">
-					<a href="">
-						<h3 class="title">Exemple Title</h3>
-						<span class="author">By Bastien Legoy</span>
-						<span class="date">3 days ago</span>
-					</a>
-				</li>
+			<h2 class="section-title">Welcome</h2>
+			<p class="section-desc">Feel free to check the blog for dev updates or the docs for API references:</p>
+			<ul>
+				<li><a href="{{ route("blog.index") }}">Check the Blog</a></li>
+				<li><a href="{{ route("docs.index") }}">Check the documentation</a></li>
 			</ul>
 		</section>
 	</div>
